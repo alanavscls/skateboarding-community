@@ -3,3 +3,12 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #FFFFFF;
 }
+
+.cabecalho {
+   display: flex;
+   justify-content: space-between; /*A propriedade "Justify-content" mexe com os elementos no eixo horizontal. Alguns valores aceitos: flex-start(valor padrão), flex-end, center, space-around, space-evenly e space-between.*/
+   align-items: center; /*O "align-items" mexe com os elementos no eixo vertical. Alguns valores aceitos: flex-start, flex-end, center e stretch(valor padrão). O "stretch" faz todos os elementos ocuparem a mesma altura do flex-container.*/
+   background-color: #15191C;
+   padding: 8px 16px; /*Quando só tem dois valores assim o primeiro valor fica em cima e embaixo, o segundo valor corresponde às laterais.*/
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+}
