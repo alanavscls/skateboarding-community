@@ -17,9 +17,11 @@
     </head>
     <body>
         <header class="cabecalho">
-            <button class="cabecalho__menu">menu</button>
+            <button class="cabecalho__menu" aria-label="Menu"><i></i></button>
+            <!--Estou utilizando a tag "i" para colocar o ícone. Poderia ser também um "span" (semanticamente mais correto)-->
+            <!--O "aria-label" é uma especificação do W3C para melhorar a acessibilidade. No caso, ele fornece a descrição do elemento.-->
             <img src="assets/img/logo.svg" alt="Logotipo da HZC" class="cabecalho__logo"/>
-            <button class="cabecalho__notificacao">notificação</button>
+            <button class="cabecalho__notificacao" aria-label="Notificação"><i></i></button>
         </header>
 
     </body>
