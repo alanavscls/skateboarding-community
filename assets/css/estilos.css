@@ -46,3 +46,44 @@ body {
     align-self: center;
     padding: 16px;
 }
+
+.menu-lateral__link {
+    height: 64px;
+    color: #95999C; 
+    padding-left: 64px;
+    display: flex; /*estamos transformando o nosso link em um flex container, isso acontece porque temos essa possibilidade ao trabalhar com o pseudo-elemento e vamos remanejar ele dentro depois.*/
+    align-items: center;
+}
+
+.menu-lateral__link::before { /*adcionando os ícones com o pseudo-elemento "before". "::before" cria um pseudo-elemento que é o primeiro filho do elemento atingido. É frequentemente utilizado para adicionar conteúdo decorativo à um element utilizando a propriedade content. Este elemento é inline por padrão.*/
+    content: "";   /*precisamos sempre ter o content. No nosso caso, vai ficar o código do ícone*/
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    position: absolute;  /*Para deixar o ícone "flutuando".*/
+    left: 24px;  /*Já quero que ele flutue, mas à esquerda.*/
+
+}
+.menu-lateral__link--inicio::before { /*Precisei criar mais essa class no HTML porque preciso modificar cada item com um content diferente.*/
+    content: "\e902";
+}
+
+.menu-lateral__link--videos::before { /*Lembrando que eu tenho que colocar o pseudo-elemento "::before" porque quero que o ícone apareça antes*/
+    content: "\e90e";
+}
+
+.menu-lateral__link--picos::before {
+    content: "\e909";
+}
+
+.menu-lateral__link--integrantes::before {
+    content: "\e903";
+}
+
+.menu-lateral__link--camisas::before {
+    content: "\e900";
+}
+
+.menu-lateral__link--pinturas::before {
+    content: "\e90a";
+}
