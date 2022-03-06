@@ -3,7 +3,6 @@
     src: url(../font/icones.ttf);
 }
 
-
 body {
     background-color: #1D232A;
     font-family: 'Open Sans', 'icones', sans-serif;
@@ -31,4 +30,19 @@ body {
 
 .cabecalho__logo {
     width: 40px;
+}
+
+.menu-lateral {
+    display: flex; /*Adicionando o "display: flex" nessa classe "menu-lateral" eu estou tornando o menu lateral em um flex container.*/
+    flex-direction: column; /*Uso porque eu quero que os elementos fiquem um abaixo do outro no menu lateral*/
+    background-color: #15191C;
+    width: 75vw; /*Ele vai ter uma largura de 75vw e esse "vw" é de viewport*/
+    height: 100vh; /*Altura do viewport(por isso o v de viewport e h de height)*/
+    
+}
+
+.menu-lateral__logo {
+    width: 118px;
+    align-self: center;
+    padding: 16px;
 }
