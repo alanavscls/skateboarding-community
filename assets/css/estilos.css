@@ -55,6 +55,12 @@ body {
     align-items: center;
 }
 
+.menu-lateral__link--ativo { /*Colocando isso para quando o mouse estiver por cima ficar diferente visualmente.*/
+    color: #FFFFFF;
+    padding-left: 56px;
+    border-left: 8px solid #FFFFFF;
+}
+
 .menu-lateral__link::before { /*adcionando os ícones com o pseudo-elemento "before". "::before" cria um pseudo-elemento que é o primeiro filho do elemento atingido. É frequentemente utilizado para adicionar conteúdo decorativo à um element utilizando a propriedade content. Este elemento é inline por padrão.*/
     content: "";   /*precisamos sempre ter o content. No nosso caso, vai ficar o código do ícone*/
     width: 24px;
