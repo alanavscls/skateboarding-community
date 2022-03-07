@@ -5,3 +5,6 @@ const menu = document.querySelector('.menu-lateral')
 
 //Mas, com isso que fizemos acima não movimentamos ainda a barra lateral para esquerda e direita. Então para isso vamos fazer mais uma classe no CSS para quando o Menu estiver ativo aparecer.
 
+botaoMenu.addEventListener('click', () => {
+    menu.classList.toggle('menu-lateral--ativo')
+})
