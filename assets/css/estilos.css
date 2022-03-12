@@ -42,6 +42,7 @@ body {
     position: absolute;  /*nós vamos transformar esse menu lateral com o posicionamento absoluto e esconder ele da tela.*/
     left: -100vw;  /*É para esconder a tela, posso colocar um tamanho negativo alto. O vw é por conta do valor do width que eu defini como vw (o w é de width)*/
     /*Esses dois são para esconder o menu lateral.*/
+    transition: .25s;
 }
 
 .menu-lateral--ativo {  /*Se eu não fizer essa parte o menu vai ficar todo escondido e não é isso que queremos. Quero que ele apareça ao ser clicado.*/

@@ -32,6 +32,22 @@
             <a href="#" class="menu-lateral__link menu-lateral__link--camisas">Camisas</a>
             <a href="#" class="menu-lateral__link menu-lateral__link--pinturas">Pinturas</a>
         </nav>
+        <main class="principal"> <!--Aqui vamos começar a fazer os "cartões" que existem na página.-->
+            <h2 class="titulo-pagina">Início</h2>
+            <article class="cartao">
+                <img src="assets/img/banner-mobile_1.png" alt="Banner do cartão" class="cartao__imagem">
+                <div class="cartao__conteudo"> <!--Por que usar uma div aqui? Porque se repararmos no modelo temos uma imagem em cima e uma divisão com o conteúdo escrito logo depois, é mais coerente separarmos com a div.-->
+                    <p class="cartao__destaque">Vídeo em destaque</p>
+                    <h3 class="cartao__titulo">HZC - Life is.../2021</h3>
+                    <p class="cartao__perfil">Alana Vasconcelos</p>
+                    <p class="cartao__info cartao__info--tempo">33 minutos</p> <!--Fiz uma classe mais genérica "cartao__info" para os dois conteúdos e criei uma mais específica com nomes diferentes no final porque quando eu for mexer em algo só dela já está pronto.-->
+                    <p class="cartao__info cartao__info--visualizacao">53 visualizações</p>
+                    <button class="cartao__botao cartao__botao--play cartao__botao--destaque">Assistir agora</button> <!--Repare na quantidade de classes que eu criei nesse botão. A 1ª vai servir para os outros que terei na página, vão seguir um padrão. A 2ª (play) e 3ª(destaque) classe são para modificar bem específico com o CSS.-->
+
+                </div>
+            </article>
+
+        </main>
         <script src="index.js"></script>       
     </body>
 </html>
